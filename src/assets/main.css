@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply scroll-smooth;
+  }
+  .img {
+    @apply max-w-full h-auto;
+  }
+
+  .card {
+    @apply rounded-lg h-full shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300;
+  }
+
+  .bg-grey {
+    @apply bg-[#F4F6F9];
+  }
+  .text-wine {
+    @apply text-[#4C1506];
+  }
+  .bg-wine {
+    @apply bg-[#4C1506];
+  }
+  .text-wine-100 {
+    @apply text-[#331B3B] leading-6 font-normal;
+  }
+  .bg-orange {
+    @apply bg-[#F59E0B];
+  }
+  .border-orange {
+    @apply border-[#F59E0B];
+  }
+  .text-orange {
+    @apply text-[#F59E0B];
+  }
+  .text-orange-dark {
+    @apply text-[#D86E23];
+  }
+  .text-blue-gray {
+    @apply text-[#5E6282];
+  }
+  .text-blue-gray-100 {
+    @apply text-[#777A99];
+  }
+  .text-light-gray-100 {
+    @apply text-[#4F5059];
+  }
+  .text-green {
+    @apply text-[#006400];
+  }
+  .text-blue {
+    @apply text-[#4682b4];
+  }
+  .text-xlarge {
+    @apply text-[65px] leading-[64.87px];
+  }
+  .text-large {
+    @apply text-[48px] leading-[51.02px];
+  }
+  .text-semi-medium {
+    @apply text-[40px] leading-[48.41px];
+  }
+  .text-medium {
+    @apply text-[36px] leading-[35.93px];
+  }
+  .orange-box {
+    @apply absolute bottom-0 left-0 w-full h-1/3 -z-10 bg-[#FDC22161];
+  }
+  .table-data {
+    @apply text-base lg:text-xl font-medium px-4 py-2 text-blue-gray text-ellipsis line-clamp-1 whitespace-nowrap max-w-60;
+  }
+  .btn {
+    @apply rounded-md cursor-pointer  outline
+        outline-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 
+        hover:bg-transparent hover:text-[#F59E0B] duration-300;
+  }
+
+  .input {
+    @apply w-full p-3 rounded-sm text-black outline outline-1 outline-gray-300 hover:outline-[#F59E0B] focus:outline-green-600;
+  }
+  .btn-disabled {
+    @apply disabled:bg-grey disabled:outline-gray-100 disabled:text-gray-400 disabled:-translate-y-0 disabled:scale-100 disabled:cursor-not-allowed;
+  }
+  .drop-list {
+    @apply block w-full px-4 py-2  hover:bg-gray-100 focus:outline-none;
+  }
+}
